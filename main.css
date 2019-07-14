@@ -30,7 +30,8 @@ img {
 }
 .sideNav{
     display: none;
-}.headshot{
+}
+.headshot {
     width: 200px;
     height: 200px;
     margin-left: -110px;
@@ -38,6 +39,14 @@ img {
     position: absolute;
     top: 50%;
     border-radius: 50%;
+}
+.headshot2{
+    width: 110px;
+    height: auto;
+    position: absolute;
+    bottom: 10%;
+    right: 100px;
+    border-radius: 25%
 }
 .bottomNav{
     background-color: #121445;
@@ -62,9 +71,18 @@ img {
   body {
       text-align: center;
   }
-  .homeHeadline {
+  .homeHeadline, .aboutMeHeadline {
     text-align: center;
     font-family: 'Monoton', cursive;
     font-size: 30px;
-    margin-bottom: -40px;
+    display: inline;
   }
+  .aboutMeBio {
+    font-family: 'Katibeh', cursive;
+    font-size: 20px;
+    width: 75%;
+    margin: auto;
+}
+.aboutMeHeadline, .aboutMeBio{
+    display: none;
+}
