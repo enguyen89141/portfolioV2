@@ -1,0 +1,70 @@
+html {
+    height: 100%;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background: linear-gradient(0deg, rgba(18,20,69,1) 25%, rgba(243,85,255,1) 52%, rgba(76,209,255,1) 100%);
+}
+#aboutMe {
+    top: 345px;
+    color: #f355ff;
+    background-color: #121445;
+}
+
+#projects{
+    top: 435px;
+    color: #121445;
+    background-color: #4cd1ff;
+}
+
+#contact {
+    top: 525px;
+    color: white;
+    background-color: #f355ff;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+    float: right;
+    padding-left: 15px;
+}
+.sideNav{
+    display: none;
+}.headshot{
+    width: 200px;
+    height: 200px;
+    margin-left: -110px;
+    margin-top: -100px;
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
+}
+.bottomNav{
+    background-color: #121445;
+    overflow: hidden;
+    position: fixed;
+    bottom: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    left: 0;
+    }
+.bottomNav button {
+    display: block;    
+    background-color: #121445;
+    color: #10FFEF;
+    padding: auto;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'Major Mono Display', monospace;
+    border: 2px solid #10FFEF;
+  }
+  body {
+      text-align: center;
+  }
+  .homeHeadline {
+    text-align: center;
+    font-family: 'Monoton', cursive;
+    font-size: 30px;
+    margin-bottom: -40px;
+  }
