@@ -9,6 +9,10 @@ function fadeInAboutMe() {
         coding because there are always numerous ways to arrive at a solution \
         and through time I'm striving to become more efficient in finding the \
         path of least resistance with my code.\
+        I'm looking forward to working with a company with skilled developers\
+        of which are both better skilled and less skilled than myself. \
+        I believe it's important to learn from others and help others learn\
+        in order to gain a well rounded understanding of anything you do.\
         It's also very gratifying after working so hard on a problem and \
         finally arriving at a solution. (Like beating a Dark Souls boss)")
         $('.aboutMeBio').append("<p><img class='headshot2' src='./images/me2.jpg' alt='Additional picture of Eric'></p>")
@@ -27,6 +31,7 @@ function fadeInProjects() {
         student of Bloc.io's Web Development BootCamp.")
         $('.projectInfo').append("<p><a href='https://enguyen89141.github.io/quizApp/' target='_blank'>\
         <img class='projectIcons' src='./images/pokerQuizIcon.png'alt='Diamond royal flush'> \
+        <p><a href='https://enguyen89141.github.io/quizApp/' target='_blank'>Link to App</a></p>\
         <p><a href='https://github.com/enguyen89141/quizApp' target='_blank'>Link to GitHub Repository</a></p> \
         </a></p><div class='thumbnails'><a class='thumbnail' href='#'><img src='./images/poker1.png' alt='\
         screenshot of poker quiz'></a><a class='thumbnail' href='#'><img src='./images/poker2.png' alt='\
