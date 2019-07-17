@@ -87,8 +87,12 @@ html {
 .contactInfo img {
     width: 100px;
     height: 100px;
-    margin: 20px 50px;
+    margin: 20px 30px;
 }
 .contactInfo, .projectInfo, .aboutMeBio{
     text-align: center;
+}
+.thumbnails img {
+    height: 20px;
+    width: 20px;
 }

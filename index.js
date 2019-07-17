@@ -26,9 +26,14 @@ function fadeInProjects() {
         correcty as well as informing the user which question they're on.")
         $('.projectInfo').append("<p><a href='https://enguyen89141.github.io/quizApp/' target='_blank'>\
         <img class='projectIcons' src='./images/pokerQuizIcon.png' \
-        alt='Diamond royal flush'></a></p>")
+        alt='Diamond royal flush'></a></p><div class='thumbnails'><a class='thumbnail' href='#'><img src='./images/poker1.png' alt='\
+        screenshot of poker quiz'></a><a class='thumbnail' href='#'><img src='./images/poker2.png' alt='\
+        screenshot of poker quiz'></a><a class='thumbnail' href='#'><img src='./images/poker3.png' alt='\
+        screenshot of poker quiz'></a><a class='thumbnail' href='#'><img src='./images/poker4.png' alt='\
+        screenshot of poker quiz'></a></div>")
         $('.projectInfo').fadeIn("slow")
         $('.projectIcons').fadeIn("slow")
+        handleThumbnailClicks();
     })
 }
 
@@ -60,6 +65,14 @@ function fadeInContact() {
         $('.contactInfo').fadeIn("slow")
     })
 }
+
+function handleThumbnailClicks() {
+    $('.thumbnail').on('click', function(event) {
+       const imgSrc = $(this).find('img').attr('src');  
+       const imgAlt = $(this).find('img').attr('alt');
+      $('.projectIcons').attr('src', imgSrc).attr('alt', imgAlt);
+    });
+  }
 fadeInContact();
 fadeInProjects();
 fadeInAboutMe();
