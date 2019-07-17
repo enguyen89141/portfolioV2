@@ -1,55 +1,51 @@
 html {
-    height: 100%;
-    background-size: cover;
-    background-repeat:no-repeat;
-    background: linear-gradient(0deg, rgba(18,20,69,1) 25%, rgba(243,85,255,1) 52%, rgba(76,209,255,1) 100%);
+    background-color: #0B0C10;
 }
 #aboutMe {
     top: 345px;
-    color: #f355ff;
-    background-color: #121445;
+    color: #66FCF1;
+    background-color: #1F2833;
 }
 
 #projects{
     top: 435px;
-    color: #121445;
-    background-color: #4cd1ff;
+    color: #66FCF1;
+    background-color: #1F2833;
 }
 
 #contact {
     top: 525px;
-    color: white;
-    background-color: #f355ff;
+    color: #66FCF1;
+    background-color: #1F2833;
 }
 
-img {
-    width: 40px;
-    height: 40px;
-    float: right;
-    padding-left: 15px;
-}
 .sideNav{
     display: none;
 }
 .headshot {
     width: 200px;
     height: 200px;
-    margin-left: -110px;
+    margin-left: -100px;
     margin-top: -100px;
     position: absolute;
     top: 50%;
     border-radius: 50%;
 }
+.projectIcons {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+}
 .headshot2{
     width: 110px;
     height: auto;
-    position: absolute;
-    bottom: 10%;
     right: 100px;
-    border-radius: 25%
+    border-radius: 25%;
+    margin-top: 10%;
 }
 .bottomNav{
-    background-color: #121445;
+    background-color: #0B0C10;
     overflow: hidden;
     position: fixed;
     bottom: 5%;
@@ -60,29 +56,39 @@ img {
     }
 .bottomNav button {
     display: block;    
-    background-color: #121445;
-    color: #10FFEF;
+    background-color: #1F2833;
+    color: #66FCF1;
     padding: auto;
     text-decoration: none;
     font-size: 12px;
     font-family: 'Major Mono Display', monospace;
-    border: 2px solid #10FFEF;
+    border: 2px solid #45A28E;
   }
   body {
       text-align: center;
   }
-  .homeHeadline, .aboutMeHeadline {
+  .homeHeadline, .aboutMeHeadline, .projectHeadline, .contactHeadline {
     text-align: center;
     font-family: 'Monoton', cursive;
     font-size: 30px;
     display: inline;
+    color: #66FCF1;
   }
-  .aboutMeBio {
+  .aboutMeBio, .projectInfo, .contactInfo {
     font-family: 'Katibeh', cursive;
+    color: #C5C6C7;
     font-size: 20px;
     width: 75%;
     margin: auto;
 }
-.aboutMeHeadline, .aboutMeBio{
+.aboutMeHeadline, .aboutMeBio, .projectInfo, .projectHeadline, .projectIcons, .contactHeadline{
     display: none;
+}
+.contactInfo img {
+    width: 100px;
+    height: 100px;
+    margin: 20px 50px;
+}
+.contactInfo, .projectInfo, .aboutMeBio{
+    text-align: center;
 }
