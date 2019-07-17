@@ -1,6 +1,6 @@
 
 function fadeInAboutMe() {
-    $(".headshot, .aboutMeButton").on('click', function(event) {
+    $(".headshot, .aboutMeButton, #aboutMe").on('click', function(event) {
         fadeOutAll()
         $('.aboutMeHeadline').text('My name is Eric Nguyen')
         $('.aboutMeHeadline').fadeIn("slow")
@@ -17,16 +17,18 @@ function fadeInAboutMe() {
 })}
 
 function fadeInProjects() {
-    $('.projectsButton').on('click', function(event) {
+    $('.projectsButton, #projects').on('click', function(event) {
         fadeOutAll()
         $('.projectHeadline').text('PokerQuiz')
         $('.projectHeadline').fadeIn("slow")
         $('.projectInfo').text("This application utilizes HTML, CSS, and jQuery to test the users knowledge about basic \
         Texas Hold'em whilst keeping a running score count of the questions they've answered \
-        correcty as well as informing the user which question they're on.")
+        correctly as well as informing the user which question they're on. This was my first project as a \
+        student of Bloc.io's Web Development BootCamp.")
         $('.projectInfo').append("<p><a href='https://enguyen89141.github.io/quizApp/' target='_blank'>\
-        <img class='projectIcons' src='./images/pokerQuizIcon.png' \
-        alt='Diamond royal flush'></a></p><div class='thumbnails'><a class='thumbnail' href='#'><img src='./images/poker1.png' alt='\
+        <img class='projectIcons' src='./images/pokerQuizIcon.png'alt='Diamond royal flush'> \
+        <p><a href='https://github.com/enguyen89141/quizApp' target='_blank'>Link to GitHub Repository</a></p> \
+        </a></p><div class='thumbnails'><a class='thumbnail' href='#'><img src='./images/poker1.png' alt='\
         screenshot of poker quiz'></a><a class='thumbnail' href='#'><img src='./images/poker2.png' alt='\
         screenshot of poker quiz'></a><a class='thumbnail' href='#'><img src='./images/poker3.png' alt='\
         screenshot of poker quiz'></a><a class='thumbnail' href='#'><img src='./images/poker4.png' alt='\
@@ -51,7 +53,7 @@ function fadeOutAll() {
 }
 
 function fadeInContact() {
-    $('.contactButton').on('click', function(event) {
+    $('.contactButton, #contact').on('click', function(event) {
         fadeOutAll();
         $('.contactHeadline').text('Feel free to reach out!')
         $('.contactHeadline').fadeIn("slow")
@@ -73,6 +75,10 @@ function handleThumbnailClicks() {
       $('.projectIcons').attr('src', imgSrc).attr('alt', imgAlt);
     });
   }
-fadeInContact();
-fadeInProjects();
-fadeInAboutMe();
+function portfolioStart() {
+    fadeInContact();
+    fadeInProjects();
+    fadeInAboutMe();    
+}
+
+portfolioStart();

@@ -6,7 +6,11 @@ html {
     color: #66FCF1;
     background-color: #1F2833;
 }
-
+a {
+    text-decoration: none;
+    color: #66FCF1;
+    
+}
 #projects{
     top: 435px;
     color: #66FCF1;
@@ -21,6 +25,29 @@ html {
 
 .sideNav{
     display: none;
+}
+.sideNav img {
+    width: 40px;
+    height: 40px;
+    float: right;
+    padding-left: 15px;
+}
+.sideNav a{
+    position: absolute;
+    left: -140px;
+    transition: 0.4s;
+    padding: 14px;
+    width: 180px;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    text-decoration: none;
+    font-family: 'Major Mono Display', monospace;
+}
+
+.sideNav a:hover{
+    left: 0;
+    text-align: right;
 }
 .headshot {
     width: 200px;
@@ -95,4 +122,54 @@ html {
 .thumbnails img {
     height: 20px;
     width: 20px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .homeHeadline, .aboutMeHeadline, .projectHeadline, .contactHeadline{
+        font-size: 80px;
+    }
+    .headshot{
+        width: 400px;
+        height: 400px;
+        margin-left: -200px;
+    }
+    .headshot2 {
+        height: 400px;
+        width: 300px;
+        margin-top: 0;
+    }
+    .bottomNav button {
+        height: 100px;
+        width: 200px;
+        font-size: 30px;
+    }
+    .aboutMeBio, .projectInfo, .contactInfo{
+        font-size: 30px;
+    }
+    .thumbnail img{
+        height: 40px;
+        width: 40px;
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .bottomNav {
+        display: none;
+    }
+    .sideNav {
+        display: block;
+    }
+    .headshot2 {
+        height: 250px;
+        width: 200px;
+    }
+    body{
+        padding: 0 350px;
+    }
+    .thumbnail img {
+        height: 60px;
+        width: 60px;
+    }
 }
