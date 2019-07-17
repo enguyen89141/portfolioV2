@@ -30,7 +30,7 @@ function fadeInProjects() {
         correctly as well as informing the user which question they're on. This was my first project as a \
         student of Bloc.io's Web Development BootCamp.")
         $('.projectInfo').append("<p><a href='https://enguyen89141.github.io/quizApp/' target='_blank'>\
-        <img class='projectIcons' src='./images/pokerQuizIcon.png'alt='Diamond royal flush'> \
+        <img class='projectIcons' role='presentation' src='./images/pokerQuizIcon.png'alt='Diamond royal flush'> \
         <p><a href='https://enguyen89141.github.io/quizApp/' target='_blank'>Link to App</a></p>\
         <p><a href='https://github.com/enguyen89141/quizApp' target='_blank'>Link to GitHub Repository</a></p> \
         </a></p><div class='thumbnails'><a class='thumbnail' href='#'><img src='./images/poker1.png' alt='\
@@ -65,8 +65,7 @@ function fadeInContact() {
         $('.contactInfo').append("<a href='https://www.linkedin.com/in/eric-nguyen-9b013b40' target='_blank'>\
         <img src='./images/linkedInIcon.png' alt='a link to Eric Nguyen's LinkedIn profile'></a>\
         <a href='https://github.com/enguyen89141' target='_blank'><img src='./images/gitHubIcon.png'\
-        alt='a link to Eric Nguyen's GitHub profile'></a><a href='tel:702-538-4989'><img src\
-        ='./images/phoneIcon.png' alt='link to call Eric Nguyen'></a>\
+        alt='a link to Eric Nguyen's GitHub profile'></a>\
         <a href='mailto: enguyen89141@gmail.com'><img src='./images/emailIcon.png' alt='link to email\
         Eric Nguyen'></a>")
         $('.contactInfo').fadeIn("slow")

@@ -9,7 +9,6 @@ html {
 a {
     text-decoration: none;
     color: #66FCF1;
-    
 }
 #projects{
     top: 435px;
@@ -171,5 +170,8 @@ a {
     .thumbnail img {
         height: 60px;
         width: 60px;
+    }
+    .homeHeadline{
+        font-size: 50px;
     }
 }
