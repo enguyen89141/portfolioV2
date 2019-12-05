@@ -30,16 +30,32 @@ function fadeInProjects() {
         correctly as well as informing the user which question they're on. This was my first project as a \
         student of Bloc.io's Web Development BootCamp.")
         $('.projectInfo').append("<p><a href='https://enguyen89141.github.io/quizApp/' target='_blank'>\
-        <img class='projectIcons' role='presentation' src='./images/pokerQuizIcon.png'alt='Diamond royal flush'> \
+        <img class='projectIcons' role='presentation' src='./images/pokerQuizIcon.png'alt='Diamond royal flush'></p> \
         <p><a href='https://enguyen89141.github.io/quizApp/' target='_blank'>Link to App</a></p>\
         <p><a href='https://github.com/enguyen89141/quizApp' target='_blank'>Link to GitHub Repository</a></p> \
-        </a></p><div class='thumbnails'><a class='thumbnail' href='#'><img src='./images/poker1.png' alt='\
-        screenshot of poker quiz'></a><a class='thumbnail' href='#'><img src='./images/poker2.png' alt='\
-        screenshot of poker quiz'></a><a class='thumbnail' href='#'><img src='./images/poker3.png' alt='\
-        screenshot of poker quiz'></a><a class='thumbnail' href='#'><img src='./images/poker4.png' alt='\
+        </a></p><div class='thumbnails'><a class='thumbnail'><img src='./images/poker1.png' alt='\
+        screenshot of poker quiz'></a><a class='thumbnail'><img src='./images/poker2.png' alt='\
+        screenshot of poker quiz'></a><a class='thumbnail'><img src='./images/poker3.png' alt='\
+        screenshot of poker quiz'></a><a class='thumbnail'><img src='./images/poker4.png' alt='\
         screenshot of poker quiz'></a></div>")
         $('.projectInfo').fadeIn("slow")
         $('.projectIcons').fadeIn("slow")
+        $('.projectHeadline2').text('BetterMedic')
+        $('.projectHeadline2').fadeIn("slow")
+        $('.projectInfo2').text("This application utilizes HTML, CSS, and jQuery to assist in medical diagnosis of the \
+        user and provide them with doctors within their surrounding area. This project was intended to demonstrate \
+        my knowledge and capability to work with APIs and was our 1st 'capstone' in Bloc.io's bootcamp.")
+        $('.projectInfo2').append("<p><a href='https://enguyen89141.github.io/betterMedic/' target='_blank'>\
+        <img class='projectIcons2' role='presentation' src='./images/desktop1.png'alt='Desktop home page'></p> \
+        <p><a href='https://enguyen89141.github.io/betterMedic/' target='_blank'>Link to App</a></p>\
+        <p><a href='https://github.com/enguyen89141/betterMedic' target='_blank'>Link to GitHub Repository</a></p> \
+        </a></p><div class='thumbnails2'><a class='thumbnail2'><img src='./images/desktop2.png' alt='\
+        screenshot of better medic'></a><a class='thumbnail2'><img src='./images/desktop3.png' alt='\
+        screenshot of better medic'></a><a class='thumbnail2'><img src='./images/mobile.png' alt='\
+        screenshot of better medic'></a><a class='thumbnail2'><img src='./images/mobile1.png' alt='\
+        screenshot of better medic'></a></div>")
+        $('.projectInfo2').fadeIn("slow")
+        $('.projectIcons2').fadeIn("slow")
         handleThumbnailClicks();
     })
 }
@@ -78,6 +94,11 @@ function handleThumbnailClicks() {
        const imgAlt = $(this).find('img').attr('alt');
       $('.projectIcons').attr('src', imgSrc).attr('alt', imgAlt);
     });
+    $('.thumbnail2').on('click', function(event) {
+        const imgSrc = $(this).find('img').attr('src');  
+        const imgAlt = $(this).find('img').attr('alt');
+       $('.projectIcons2').attr('src', imgSrc).attr('alt', imgAlt);
+     });
   }
 function portfolioStart() {
     fadeInContact();

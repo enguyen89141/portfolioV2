@@ -57,7 +57,7 @@ a {
     top: 50%;
     border-radius: 50%;
 }
-.projectIcons {
+.projectIcons, .projectIcons2 {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -93,21 +93,21 @@ a {
   body {
       text-align: center;
   }
-  .homeHeadline, .aboutMeHeadline, .projectHeadline, .contactHeadline {
+  .homeHeadline, .aboutMeHeadline, .projectHeadline, .contactHeadline, .projectHeadline2, .projectInfo2 {
     text-align: center;
     font-family: 'Monoton', cursive;
     font-size: 30px;
     display: inline;
     color: #66FCF1;
   }
-  .aboutMeBio, .projectInfo, .contactInfo {
+  .aboutMeBio, .projectInfo, .contactInfo, .projectInfo2 {
     font-family: 'Katibeh', cursive;
     color: #C5C6C7;
     font-size: 20px;
     width: 75%;
     margin: auto;
 }
-.aboutMeHeadline, .aboutMeBio, .projectInfo, .projectHeadline, .projectIcons, .contactHeadline{
+.aboutMeHeadline, .aboutMeBio, .projectInfo, .projectHeadline, .projectHeadline2, .projectIcons, .projectIcons2, .contactHeadline{
     display: none;
 }
 .contactInfo img {
@@ -115,17 +115,17 @@ a {
     height: 100px;
     margin: 20px 30px;
 }
-.contactInfo, .projectInfo, .aboutMeBio{
+.contactInfo, .projectInfo, .projectInfo2 .aboutMeBio{
     text-align: center;
 }
-.thumbnails img {
+.thumbnails img, .thumbnails2 img {
     height: 20px;
     width: 20px;
 }
 
 @media screen and (min-width: 768px) {
 
-    .homeHeadline, .aboutMeHeadline, .projectHeadline, .contactHeadline{
+    .homeHeadline, .aboutMeHeadline, .projectHeadline, .projectHeadline2, .contactHeadline{
         font-size: 80px;
     }
     .headshot{
@@ -143,10 +143,10 @@ a {
         width: 200px;
         font-size: 30px;
     }
-    .aboutMeBio, .projectInfo, .contactInfo{
+    .aboutMeBio, .projectInfo, .projectInfo2, .contactInfo{
         font-size: 30px;
     }
-    .thumbnail img{
+    .thumbnail img, .thumbnails2 img{
         height: 40px;
         width: 40px;
         margin: 10px;
@@ -167,7 +167,7 @@ a {
     body{
         padding: 0 350px;
     }
-    .thumbnail img {
+    .thumbnail img, .thumbnails2 img {
         height: 60px;
         width: 60px;
     }
